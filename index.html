@@ -1,0 +1,621 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>The Future of Mobile Web Apps - Thanh Tran - VN Mobileday</title>
+	<meta name="description" content="My slides for VN Mobileday 2017 presentation, discussing why web apps are getting more relevant in the mobile scene and enhancements we can do to improve mobile web experience">
+
+	<meta property="og:url"         content="https://int3ractive.com/future-of-mobile-web" />
+	<meta property="og:type"        content="article" />
+	<meta property="og:title"       content="The Future of Mobile Web Apps - Thanh Tran - VN Mobileday" />
+	<meta property="og:description" content="My slides for VN Mobileday 2017 presentation, discussing why web apps are getting more relevant in the mobile scene and enhancements we can do to improve mobile web experience" />
+	<meta property="og:image"       content="https://int3ractive.com/future-of-mobile-web/cover.png" />
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/tomorrow.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background="img/mobile-screen.jpg" class="dark-slide title-slide">
+				<a href="http://mobileday.vn" class="logo logo--left"><img src="img/mobile-day-logo.png" alt="Mobile Day Logo" ></a>
+				<a href="https://naustud.io" class="logo logo--right"><img src="img/nau-logo.svg" alt="NAU Logo"></a>
+
+				<h1>The Future of <br>Mobile Web App</h1>
+				<h3>Trần Trọng Thanh</h3>
+				<p><a href="https://about.me/trongthanh">(about.me/trongthanh)</a></p>
+				<footer class="footnote">
+					<small>05/2017</small>
+				</footer>
+			</section>
+
+			<section data-background="img/mobile-screen.jpg" class="dark-slide title-slide">
+				<h2>Opportunities</h2>
+			</section>
+
+			<section>
+				<img class="featured-image" src="img/internet_usage_2009_2016_ww.png" alt="internet usage 2009 2016 mobile vs desktop">
+				<p>Internet usage on mobile have surpassed desktop</p>
+			</section>
+
+			<section>
+				<img class="featured-image" src="img/top-app-use.png" alt="top app use">
+				<p><strong>73%</strong> of mobile usage time spent on <strong>3 top apps</strong></p>
+			</section>
+
+			<section>
+				<img class="featured-image" src="img/number-of-app-download-monthly.png" alt="number of app download monthly">
+				<p><strong>Half of mobile users</strong> (in US) download <strong>0</strong> apps monthly</p>
+			</section>
+
+			<section>
+				<h2>Web App <span class="red-text">vs.</span> Native App <small>Round 1</small></h2>
+				<div class="col">
+					<ul>
+						<li>Smaller download size</li>
+						<li>Short time to update and publish</li>
+						<li>More approachable and broader reach via the Web</li>
+					</ul>
+				</div>
+				<div class="col">
+					<ul>
+						<li>Larger download size</li>
+						<li>Longer time to update and publish</li>
+						<li>Less approachable and narrower reach via app store</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<h2>Suitable categories for mobile web</h2>
+				<div class="col">
+					<ul>
+						<li>News and text publishing</li>
+						<li>E-commerce</li>
+						<li>Social network</li>
+						<li>Online management tool</li>
+						<li>…</li>
+					</ul>
+				</div>
+				<div class="col">
+					<img src="img/mobile-web-app-types.png" class="plain" alt="different types of mobile web app">
+				</div>
+				<footer class="footnote">
+					 <small>Screenshots from app.ft.com, m.aliexpress.com, flipboard.com</small>
+				</footer>
+			</section>
+
+			<section data-background="img/mobile-screen.jpg" class="dark-slide title-slide">
+				<h2>Challenges</h2>
+			</section>
+
+			<section>
+				<blockquote cite="https://techcrunch.com/2012/09/11/mark-zuckerberg-our-biggest-mistake-with-mobile-was-betting-too-much-on-html5/">
+					&ldquo;Our biggest mistake was betting too much on&nbsp;HTML5.&rdquo;
+				</blockquote>
+				<p>- Mark Zuckerberg, circa 2012</p>
+				<footer class="footnote">
+					<small>Cite: <a href="https://techcrunch.com/2012/09/11/mark-zuckerberg-our-biggest-mistake-with-mobile-was-betting-too-much-on-html5/">techcrunch.com</a></small>
+				</footer>
+			</section>
+
+			<section>
+				<p>Is it still true now?</p>
+			</section>
+
+			<section>
+				<img class="featured-image" src="img/ios-benchmark.png" alt="ios benchmark 2012 2016">
+				<p>Smartphone's performance is getting <strong>a lot better</strong>.</p>
+				<footer class="footnote">
+					<small>*Source: browser.primatelabs.com</small>
+				</footer>
+			</section>
+
+			<section>
+				<p>However...</p>
+			</section>
+
+			<section>
+				<img class="featured-image" src="img/percent-time-spent-on-mobile-apps-2016.png" alt="percent time spent on mobile apps 2016">
+				<p>Smartphone users spend <strong>10%</strong> of time on browser vs. <strong>90%</strong> on apps.</p>
+			</section>
+
+			<section>
+				<h2>Web App <span class="red-text">vs.</span> Native App <small>Round 2</small></h2>
+				<img class="featured-image plain" src="img/native-vs-web-1.png" alt="Native vs web ">
+			</section>
+
+			<section>
+				<h2>Web App <span class="red-text">vs.</span> Native App <small>Round 2</small></h2>
+				<div class="col"><h3>???</h3></div>
+				<div class="col">
+					<ul>
+						<li>Quick access (home icon)</li>
+						<li>Full screen UI</li>
+						<li>Access device sensors</li>
+						<li>Native OS sharing UI</li>
+						<li>Push notification</li>
+						<li>Work offline</li>
+						<li>Credentials management</li>
+						<li>Form filling assist</li>
+						<li>Native OS payment UI</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<h2>Can this be future of Mobile Web App?</h2>
+				<img class="featured-image plain" src="img/native-vs-web-2.png" alt="Native vs web ">
+			</section>
+
+			<section data-background="img/mobile-screen.jpg" class="dark-slide title-slide">
+				<h2>Upgrading a Mobile Web App</h2>
+			</section>
+
+			<section>
+				<div class="col">
+					<img class="plain" src="img/vue-logo.png" alt="Vue logo">
+					<h3>Vue Shop</h3>
+					<p>Case Study</p>
+				</div>
+				<div class="col">
+					<div class="mobile-mockup">
+						<video loop>
+							<source src="videos/current-app.webm" type="video/webm">
+							<source src="videos/current-app.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+				<footer class="footnote">
+					<small>Vue Shop source code (CC BY 4.0): <a href="https://github.com/trongthanh/vuejs-firebase-shopping-cart">https://github.com/trongthanh/vuejs-firebase-shopping-cart</a></small>
+				</footer>
+			</section>
+
+			<section>
+				<img src="img/vue-and-vrohto.jpg" alt="It's Vue, not V.rohto" class="plain">
+			</section>
+
+			<section>
+				<div class="col col--large">
+					<h2>Basic Enhancements</h2>
+					<ul>
+						<li>Responsive web design, mobile friendly UI</li>
+						<li>Mobile first CSS architecture (min-width)</li>
+						<li>Static assets optimization, reduced download size</li>
+						<li>Server side rendering (applicable for SPA)</li>
+						<li>Secured connection with HTTPS</li>
+					</ul>
+				</div>
+				<div class="col col--small">
+					<div class="mobile-mockup">
+						<video loop>
+							<source src="videos/current-app.webm" type="video/webm">
+							<source src="videos/current-app.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="col col--large">
+					<h2>Quick Access</h2>
+					<ul>
+						<li>W3C standard's <strong>manifest.json</strong></li>
+						<li>Change browser theme color</li>
+						<li>Home screen icon and short name</li>
+						<li>Default URL when launched from icon</li>
+						<li>Full screen app</li>
+						<li>Customizable splash screen background</li>
+						<li>Full app name in splash screen</li>
+						<li>Orientation lock</li>
+					</ul>
+				</div>
+				<div class="col col--small">
+					<div class="mobile-mockup">
+						<video loop>
+							<source src="videos/open-add.webm" type="video/webm">
+							<source src="videos/open-add.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="col col--large">
+					<h2>Quick Access</h2>
+					<span>index.html</span>
+					<pre><code class="html" data-trim>
+&lt;link rel="manifest" href="/manifest.json"&gt;
+&lt;meta name="theme-color" content="#00796b"&gt;
+</code></pre>
+					<span>manifest.json</span>
+					<pre><code class="json" data-trim>
+{
+  “short_name": "Vue Shop",
+  "name": "Vue Shop - Mobile Shopping",
+  "icons": [
+    {
+      "src": "assets/logo-144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "assets/logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "index.html",
+  "theme_color": "#00796b",
+  "background_color": "#b2dfdb",
+  "display": "standalone",
+  "orientation": "portrait"
+}</code></pre>
+				</div>
+				<div class="col col--small">
+					<div class="mobile-mockup">
+						<video loop>
+							<source src="videos/open-add.webm" type="video/webm">
+							<source src="videos/open-add.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="col col--large">
+					<h2>Access device sensors</h2>
+					<ul>
+						<li>New web APIs allow accessing of device's sensors and peripherals.</li>
+						<li>For e.g: Vue Shop access geolocation API to optimize product listing for users...</li>
+					</ul>
+					<pre><code class="js" data-trim>
+navigator.geolocation.getCurrentPosition((position) => {
+    const pos = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude,
+    };
+
+    fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${pos.lat},${pos.lng}&key=${apiKey}`)
+        .then(/* Get location address from the result JSON */);
+});
+</code></pre>
+				</div>
+				<div class="col col--small">
+					<div class="mobile-mockup">
+						<video loop>
+							<source src="videos/geolocation-request.webm" type="video/webm">
+							<source src="videos/geolocation-request.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="col col--large">
+					<h2>Native OS Sharing UI</h2>
+					<ul>
+						<li><strong>Web Share API*</strong> allows OS native UI sharing from web apps.</li>
+					</ul>
+					<pre><code class="js" data-trim>
+if (navigator.share) {
+    navigator.share({
+        title: `${this.item.title} - ${document.title}`,
+        text: this.item.description,
+        url: window.location.href,
+    })
+    .then(() => console.log('Successful share'))
+    .catch(error => console.log('Error sharing:', error));
+}
+</code></pre>
+				</div>
+				<div class="col col--small">
+					<div class="mobile-mockup">
+						<video loop>
+							<source src="videos/native-share.webm" type="video/webm">
+							<source src="videos/native-share.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+				<footer class="footnote">
+					<small>*Feature hidden behind the flag Experimental Web Platform</small>
+				</footer>
+			</section>
+
+			<section>
+				<div class="col col--large">
+					<h2>Working offline</h2>
+					<ul>
+						<li>Current web apps depend on different browser caching behavior to allows viewing offline which is inconsistent</li>
+						<li>Application cache is hard to manage and not suitable for dynamic content</li>
+						<li>Unstable and slow Internet connection is very bad UX</li>
+					</ul>
+				</div>
+				<div class="col col--small">
+					<div class="mobile-mockup">
+						<img src="img/downosaur.png" alt="Downosaur">
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Introducing: Service Workers</h2>
+				<img src="img/sw_model.png" alt="Service worker model" class="featured-image plain">
+				<p><strong>Service Worker</strong> is a fresh new Web standard, and it requires HTTPS.</p>
+			</section>
+
+			<section>
+				<div class="col col--large">
+					<h2>Working Offline With Service Worker <small></small></h2>
+					<ul>
+						<li>With new <strong>Cache API</strong>, web apps can be opened as quickly as native ones.</li>
+						<li>Web apps can be used offline reliably</li>
+						<li>Data can be synced in background automatically when device gets Internet.</li>
+					</ul>
+					<pre><code class="js" data-trim>// register service worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js', {scope: '/'})
+  .then(function(reg) {
+    console.log('Registration succeeded. Scope is ' + reg.scope);
+  }).catch(function(error) {
+    console.log('Registration failed with ' + error);
+  });
+}
+</code></pre>
+				</div>
+				<div class="col col--small">
+					<div class="mobile-mockup">
+						<video loop>
+							<source src="videos/offline-viewing.webm" type="video/webm">
+							<source src="videos/offline-viewing.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="col col--large">
+					<h2>Native Add to home screen banner</h2>
+					<img class="full-image" src="img/add-to-home-screen-requirement.png" alt="native add to home screen requirement">
+				</div>
+				<div class="col col--small">
+					<div class="mobile-mockup">
+						<video loop>
+							<source src="videos/native-add-to-home-screen.webm" type="video/webm">
+							<source src="videos/native-add-to-home-screen.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="col col--large">
+					<h2>Web Push Notification</h2>
+					<ul>
+						<li><strong>Web Push Notification</strong> requires Service Worker</li>
+						<li>Like other new API, Push Notificaiton require user's consent</li>
+						<li>Users will still notifications even when browser is quit</li>
+						<li>To avoid being blocked, only request push notifications with engaged users</li>
+						<li>Send Push Notification timely and only when needed</li>
+					</ul>
+				</div>
+				<div class="col col--small">
+					<div class="mobile-mockup">
+						<video loop>
+							<source src="videos/send-notification-request.webm" type="video/webm">
+							<source src="videos/send-notification-request.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<video loop>
+					<source src="videos/push-notification.webm" type="video/webm">
+					<source src="videos/push-notification.mp4" type="video/mp4">
+				</video>
+				<footer class="footnote">
+					<small>Push notification demo: using Firebase Cloud Messaging</small>
+				</footer>
+			</section>
+
+			<section>
+				<div class="col col--large">
+					<h2>Web Credential Management</h2>
+					<ul>
+						<li><strong>Web Credential Management API</strong> allows quick and easy logins.</li>
+						<li>Combined with modern browser's credentials synchronization, users can login easily on multiple devices.</li>
+					</ul>
+					<pre><code class="js" data-trim>
+// basic credential management API
+navigator.credentials.get()
+navigator.credentials.store()
+navigator.credentials.requireUserMediation()
+</code></pre>
+				</div>
+				<div class="col col--small">
+					<div class="mobile-mockup">
+						<video loop>
+							<source src="videos/credential-management.webm" type="video/webm">
+							<source src="videos/credential-management.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+				<footer class="footnote"><small>Demo from <a href="https://credential-management-sample.appspot.com/">https://credential-management-sample.appspot.com/</a></small></footer>
+			</section>
+
+			<section>
+				<div class="col col--large">
+					<h2>Form input assist</h2>
+					<ul>
+						<li><strong>HTML5 Form Autofill</strong> allows quick form completion via browser's stored form fields</li>
+					</ul>
+					<pre><code class="html" data-trim>
+&lt;label for="frmAddressS"&gt;Address&lt;/label&gt;
+&lt;input autocomplete="shipping street-address" name="ship-address" required
+       id="frmAddressS" placeholder="123 Any Street"&gt;
+
+&lt;label for="frmCityS"&gt;City&lt;/label&gt;
+&lt;input autocomplete="shipping locality" name="ship-city" required
+       id="frmCityS" placeholder="New York"&gt;
+
+&lt;label for="frmStateS"&gt;State&lt;/label&gt;
+&lt;input autocomplete="shipping region" name="ship-state" required
+       id="frmStateS" placeholder="NY"&gt;
+
+&lt;label for="frmZipS"&gt;Zip&lt;/label&gt;
+&lt;input autocomplete="shipping postal-code" name="ship-zip" required
+       id="frmZipS" placeholder="10011"&gt;
+
+&lt;label for="frmCountryS"&gt;Country&lt;/label&gt;
+&lt;input autocomplete="shipping country" name="ship-country" required
+       id="frmCountryS" placeholder="USA"&gt;
+</code></pre>
+				</div>
+				<div class="col col--small">
+					<div class="mobile-mockup">
+						<img src="img/form-autofill.gif" alt="Form auto fill">
+					</div>
+				</div>
+				<footer class="footnote"><small>Demo from <a href="https://developers.google.com/web/updates/2015/06/checkout-faster-with-autofill">developers.google.com</a></small></footer>
+			</section>
+
+			<section>
+				<div class="col col--large">
+					<h2>Form input assist (contd.)</h2>
+					<ul>
+						<li><strong>Google Maps address auto complete API</strong> allows quick address filling with result hinting.</li>
+					</ul>
+					<pre><code class="js" data-trim>
+// Create the autocomplete object, restricting the search to geographical location types.
+let autoCompleteInput = document.getElementById('search-input');
+autocomplete = new google.maps.places.Autocomplete(autoCompleteInput, { types: ['geocode'] });
+
+// When the user selects an address from the dropdown, populate the address fields in the form.
+autocomplete.addListener('place_changed', () => {
+  let place = autocomplete.getPlace();
+  // fill in the address form...
+});
+</code></pre>
+				</div>
+				<div class="col col--small">
+					<div class="mobile-mockup">
+						<video loop>
+							<source src="videos/address-auto-complete-vietnam.webm" type="video/webm">
+							<source src="videos/address-auto-complete-vietnam.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+				<footer class="footnote"><small>Demo from <a href="https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform">developers.google.com</a></small></footer>
+			</section>
+
+			<section>
+				<div class="col col--large">
+					<h2>Online Payment Assist</h2>
+					<ul>
+						<li><strong>Web Payment Request API</strong> allows secured and reliable payment experience on browsers.</li>
+						<li>Web Payment Request API can be used with <strong>Android Pay</strong> to further simplify payment process</li>
+					</ul>
+					<img class="plain" src="img/payment-request-model.png" alt="payment request model">
+				</div>
+				<div class="col col--small">
+					<div class="mobile-mockup">
+						<video loop>
+							<source src="videos/web-payment.webm" type="video/webm">
+							<source src="videos/web-payment.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+				<footer class="footnote"><small>Diagram from <a href="https://developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/">developers.google.com</a>. Demo at <a href="https://emerald-eon.appspot.com/">https://emerald-eon.appspot.com/</a></small></footer>
+			</section>
+
+			<section data-background="img/mobile-screen.jpg" class="dark-slide title-slide">
+				<h3>Enter the age of</h3>
+				<h2>Progressive Web App</h2>
+			</section>
+
+			<section>
+				<h2>Progressive Web App?</h2>
+				<ul>
+					<li>Progressive enhancement</li>
+					<li>User-centric experience</li>
+					<li>Fast and reliable like native apps</li>
+					<li>Approachable and convenient like web apps</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Mobile Web App in the near future?</h2>
+				<ul>
+					<li>Deeper PWA integration in Android (Google I/O ’17)</li>
+					<li>WebRTC - p2p data exchange and video conference</li>
+					<li>WebGL - 3D content rendering with HW acceleration</li>
+					<li>WebVR - VR support natively on browsers</li>
+					<li>WebAR - AR support natively on browsers (Google I/O ’17)</li>
+					<li>…</li>
+				</ul>
+			</section>
+
+			<section data-background="img/mobile-on-hand.jpg" class="dark-slide title-slide">
+				<a href="http://mobileday.vn" class="logo logo--left"><img src="img/mobile-day-logo.png" alt="Mobile Day Logo" ></a>
+				<a href="https://naustud.io" class="logo logo--right"><img src="img/nau-logo.svg" alt="NAU Logo"></a>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<h2>The End</h2>
+				<h3>Thank You</h3>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+
+				<footer class="footnote">
+					<small>Vue Shop source code (CC BY 4.0): <a href="https://github.com/trongthanh/vuejs-firebase-shopping-cart">https://github.com/trongthanh/vuejs-firebase-shopping-cart</a></small>
+				</footer>
+			</section>
+		</div>
+	</div>
+
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			width: 1440,
+			height: 900, //960
+			margin: 0,
+
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			transition: 'none', // none/fade/slide/convex/concave/zoom
+			autoPlayMedia: true,
+
+			dependencies: [
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+</html>
